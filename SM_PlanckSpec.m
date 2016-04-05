@@ -1,4 +1,5 @@
 %Planck Spectrum
+%Energy(y) distribution as a function of photon energy(x), at temperature 1500K.
 %Maddie C.
 %4/6/2016
 %
