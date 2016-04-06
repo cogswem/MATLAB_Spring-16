@@ -1,6 +1,6 @@
 %Planck Spectrum
 %Maddie C.
-%4/6/2016
+%4/5/2016
 %
 T=1500;                     %Temperature of kiln (K)
 k=1.38e-23;                 %Boltzmann's constant (eV/K)
