@@ -1,4 +1,4 @@
-%MATLAB Essentials by Hahn and Valentine
+%Essential MATLAB by Hahn and Valentine
 %
 %Chapter 4 Exercise 4.1
 %Maddie C
