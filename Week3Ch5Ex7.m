@@ -19,9 +19,9 @@
 %in two columns: one for the electricity used in each case, and one for
 %amount owed.
 %
-n=[200 500 700 1000 1500];   %The units of electricity residents use in a certain month
-cost=5.*(n<=500)+0.02.*n.*(n<=500);
-cost=cost+15.*(n>500 & n<=1000)+0.05.*((n-500).*(n>500 & n<=1000));
-cost=cost+40.*(n>1000)+0.1.*((n-1000).*(n>1000));
-disp(['  Electricity      ',' Cost'])
+n=[200 500 700 1000 1500];   %define the units of electricity residents use in a certain month
+cost=5.*(n<=500)+0.02.*n.*(n<=500); %calculate the cost of electricity units less than or equal to 500. cost= [9 15 0 0 0]
+cost=cost+15.*(n>500 & n<=1000)+0.05.*((n-500).*(n>500 & n<=1000)); %calculate cost of electricity units greater than 500, but less than/equal to 1000. cost=[9 15 25 40 0]
+cost=cost+40.*(n>1000)+0.1.*((n-1000).*(n>1000)); %calculate cost of electricity units greater than 1000, cummulative cost=[9 15 25 40 90]
+disp(['  Electricity      ',' Cost']) %display in two colum table
 disp([n' cost'])
