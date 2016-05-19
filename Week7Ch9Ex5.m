@@ -20,9 +20,3 @@ r=a*(1-e^2)./(1-e.*cos(theta)); %equation of an ellipse, find r of theta
 x=r.*cos(theta);
 y=r.*sin(theta);
 comet(x,y); %plot comet path
-hold on
-r2=(1-e^2)./(1-e*cos(theta));
-x2=r2.*cos(theta);
-y2=r2.*sin(theta);
-plot(x2,y2)
-hold off
